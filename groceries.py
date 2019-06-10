@@ -32,7 +32,10 @@ products = [
 
 products_count = len(products)
 
-print(--------------)
+print("--------------")
 #print ("THERE ARE" + str(products_count) + "PRODUCTS:") #concatiniation
 print(f"THERE ARE {products_count} PRODUCTS:") #format string. f is like a formula. interpolation
-print (--------------)
+print ("--------------")
+
+for item in products:
+    print(f"{item['name']}...{item['price']}") #use square brackets to reference any item in the dictionary. need to join name and price
